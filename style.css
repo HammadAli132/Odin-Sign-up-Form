@@ -63,5 +63,22 @@ main {
 }
 
 .right-panel {
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+}
 
+#top, #bottom {
+    padding: 2rem;
+}
+
+#form {
+    background-color: white;
+    box-shadow: 0px 7px 10px -7px gray;
+}
+
+#bottom {
+    
 }
