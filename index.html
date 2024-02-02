@@ -26,14 +26,37 @@
             <section id="top">
                 <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get hacked.<br><br>You <em> know </em> you want to.</h1>
             </section>
-            <form action="#" id="form">
-                <h1>Lets Do This!</h1>
-                <div>
-
+            <form action="#" id="form" method="post">
+                <div class="white-bg">
+                    <h1>Lets Do This!</h1>
+                    <div>
+                        <label for="f-name">FIRST NAME</label>
+                        <input type="text" id="f-name" required>
+                    </div>
+                    <div>
+                        <label for="l-name">LAST NAME</label>
+                        <input type="text" id="l-name" required>
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phNo">PHONE NUMBER</label>
+                        <input type="number" id="phNo" required>
+                    </div>
+                    <div>
+                        <label for="pswrd">PASSWORD</label>
+                        <input type="password" id="pswrd" required>
+                    </div>
+                    <div>
+                        <label for="cnfmpswrd">CONFIRM PASSWORD</label>
+                        <input type="password" id="cnfmpswrd" required>
+                    </div>
                 </div>
+                <button type="submit" id="submit-btn">Create Account</button>
             </form>
             <section id="bottom">
-                <button type="submit">Create Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </section>
         </div>

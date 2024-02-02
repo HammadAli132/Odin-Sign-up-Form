@@ -70,15 +70,67 @@ main {
     width: 65%;
 }
 
-#top, #bottom {
+#top, #bottom, .white-bg {
     padding: 2rem;
 }
 
-#form {
+.white-bg {
     background-color: white;
     box-shadow: 0px 7px 10px -7px gray;
+    padding-right: 20rem;
+}
+
+.white-bg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: .8rem;
+    row-gap: 1rem;
+}
+
+.white-bg h1 {
+    grid-column: span 2;
+}
+
+#form label {
+    display: block;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#form input {
+    width: 80%;
+    padding: .2rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    outline: none;
+}
+
+#form input:focus {
+    box-shadow: 2px 3px 4px 0px #c3c3c3;
+    border: 1.5px solid var(--left-panel-text-color);
+}
+
+#form button {
+    padding: .5rem 2rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--left-panel-text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    color: whitesmoke;
+    transition: all .2s;
+    margin: 2rem 0 0 2rem;
+}
+
+#form > button:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 7px -1px rgb(164, 223, 255);
 }
 
 #bottom {
-    
+    font-size: 1.1rem;
+}
+
+#bottom > p > a{
+    color: var(--left-panel-text-color);
+    text-decoration: none;
 }
